@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title></title>
+</head>
+<body onload="countries=renderQuestion()">
+    <div class="main-page">
+        <div class="challenge container">
+            <h1 id="question">Arrange by population</h1>
+            <h2>(Drag and drop)</h2>
+            <div id="titles" class="d-flex justify-content-space-between">
+                <div id="population-small" class="choice-title d-flex justify-content-center align-items-center"></div>
+                <div id="population-medium" class="choice-title d-flex justify-content-center align-items-center"></div>
+                <div id="population-large" class="choice-title d-flex justify-content-center align-items-center"></div>
+            </div>
+            <div id="choices-1" class="d-flex justify-content-space-between">
+                <div id="A" class="choice d-flex justify-content-center align-items-center"></div>
+                <div id="B" class="choice d-flex justify-content-center align-items-center"></div>
+                <div id="C" class="choice d-flex justify-content-center align-items-center"></div>
+            </div>
+            <div id="correct-answers" class="correct-answers"></div>
+            <div id="comment" class="comment"></div>
+            <div class="d-flex justify-content-center">
+                <div id="minutes" class="timer">00</div>
+                <div id="colon" class="timer">:</div>
+                <div id="seconds" class="timer">00</div>
+            </div>
+            <div id="score" class="score"></div>
+            <div id="progress" class="d-flex justify-content-center">
+                <div id="1" class="circle"></div>
+                <div id="2" class="circle"></div>
+                <div id="3" class="circle"></div>
+                <div id="4" class="circle"></div>
+                <div id="5" class="circle"></div>
+                <div id="6" class="circle"></div>
+                <div id="7" class="circle"></div>
+                <div id="8" class="circle"></div>
+                <div id="9" class="circle"></div>
+                <div id="10" class="circle"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button id="answer-button" class="answer-button">Answer</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a id="menu-button" class="button" href="select_game.html">Back</a>
+            </div>
+        </div>
+        <div class="footer d-flex justify-content-center">
+            <a href="select_game.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+            <p>© 2022 GeoChallenge</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="../Javascript/population_challenge.js"></script>
+    <script src="../Javascript/shared_functions.js"></script>
+</body>
+</html>

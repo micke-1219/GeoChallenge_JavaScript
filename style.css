@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Handlee', cursive; */
+/* font-family: 'Neucha', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Neucha', cursive;
+    color: #1D252D;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* main-page */
+
+.main-page {
+    height: 100vh;
+}
+
+.earth {
+    height: 400px;
+    width: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #1D252D;
+    border-radius: 50px;
+    color: #1D252D;
+    background: transparent;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all .4s;
+    margin-bottom: 1rem;
+    width: 15rem;
+}
+
+.button:hover {
+    color: white;
+    background-color: #1D252D;
+    transition: all .4s;
+}
+
+.footer {
+    color: white;
+    background-color: #1D252D;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    position: absolute;
+    left: 1rem;
+    align-self: center;
+}
+
+.footer i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.footer i:hover {
+    color: red;
+    transition: all .4s;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* select-game */
+
+.select-game h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 1px 1px 20px lightgrey;
+    margin: 0;
+    width: 350px;
+}
+
+.card h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 18px;
+    color: #585858;
+    margin: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+.card .button {
+    width: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+.card .img-container {
+    background-color: #414149;
+    height: 250px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .img-container img {
+    height: 100%;
+    right: 0;
+    position: absolute;
+    cursor: initial;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* challenges */
+
+.challenge h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.challenge h2 {
+    text-align: center;
+    margin-top: -3rem;
+    padding-bottom: 3rem;
+}
+
+.choice-title {
+    height: 150px;
+    width: 350px;
+    font-family: 'Neucha', cursive;
+    font-size: 24px;
+    color: #1D252D;
+    margin: 0;
+}
+
+.choice {
+    box-shadow: 1px 1px 20px lightgrey;
+    font-size: 18px;
+    color: #1D252D;
+    margin: 0;
+    margin-bottom: 5rem;
+    height: 150px;
+    width: 350px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.choice-hidden {
+  opacity: 0;
+}
+
+.timer {
+    color: #1D252D;
+    font-size: 40px;
+    font-family: 'Neucha', cursive;
+    margin-bottom: 1rem;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    border: solid 1px #585858;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.correct-answers {
+    display: none;
+    color: #1D252D;
+    font-size: 40px;
+    font-family: 'Neucha', cursive;
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.score {
+    display: none;
+    color: #1D252D;
+    font-size: 50px;
+    font-family: 'Neucha', cursive;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.comment {
+    display: none;
+    font-size: 18px;
+    color: #585858;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.challenge .button {
+    margin-top: 5rem;
+    display: none;
+    width: 15rem;
+}
+
+img {
+    height: 150px;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.answer-button {
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #1D252D;
+    border-radius: 50px;
+    color: #1D252D;
+    background: transparent;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all .4s;
+    margin-top: 3rem;
+    width: 20rem;
+}
+
+.answer-button:hover {
+    color: white;
+    background-color: #1D252D;
+    transition: all .4s;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* media queries */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
